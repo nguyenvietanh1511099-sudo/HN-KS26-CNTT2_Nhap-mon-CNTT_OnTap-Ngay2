@@ -48,14 +48,13 @@ ERROR trong payment.log: 3
 ### Lệnh chạy (Windows: nếu dùng Phụ lục 2 thì ghi cả 2 lệnh)
 
 ```shell
-zsh auto_warning.sh
-cat logs/warning_report.txt
-
+bash auto_warning.sh
 ```
 
 ### Nội dung file logs/warning_report.txt
 
 ```text
+=== CANH BAO THANH TOAN ===
 
 2025-10-18 09:19:13 [WARNING] Cong thanh toan phan hoi cham
 2025-10-18 09:28:16 [WARNING] Nhieu lan nhap sai ma OTP
@@ -79,6 +78,7 @@ cat logs/payment.log | grep "WARNING" | wc -l >> logs/tong_hop_ngay2.txt
 
 ```text
 === TONG HOP ACCESS LOG ===
+
 2025-10-18 08:17:59 [ERROR] Khong tim thay trang /lich-thi (404)
 2025-10-18 08:25:55 [ERROR] Het thoi gian cho (timeout)
 2025-10-18 08:33:51 [ERROR] Ket noi may chu du lieu that bai
@@ -86,7 +86,7 @@ cat logs/payment.log | grep "WARNING" | wc -l >> logs/tong_hop_ngay2.txt
 2025-10-18 08:49:43 [ERROR] Het thoi gian cho (timeout)
 2025-10-18 08:53:11 [ERROR] Het thoi gian cho (timeout)
     
-
+5
 ```
 
 ## Bài 5. Câu hỏi ngắn
